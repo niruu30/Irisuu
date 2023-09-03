@@ -1,0 +1,44 @@
+* {
+    outline: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', 'Microsoft JhengHei', Arial, sans-serif;
+    overflow: hidden;
+}
+
+#main {
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.bg {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    background-color: #f2e9de;
+}
+
+.title {
+    margin: 20px;
+}
+
+.header {
+    margin: 5px 0;
+}
+
+.content {
+    margin: 5px 0;
+}
