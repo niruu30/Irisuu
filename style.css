@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: font-header;
+    src: url(font-header.ttf);
+}
+
+@font-face {
+    font-family: font-body;
+    src: url(font-body.ttf);
+}
+
+@font-face {
+    font-family: font-regular;
+    src: url(font-regular.ttf);
+}
+
 body {
     font-family: 'Raleway', 'Microsoft JhengHei', Arial, sans-serif;
     overflow: hidden;
@@ -35,10 +50,19 @@ body {
     margin: 20px;
 }
 
+.title h1 {
+    font-family: font-header;
+    font-size: 2.5em;
+}
+
 .header {
-    margin: 5px 0;
+    margin: 10px 0;
+    font-family: font-regular;
+    font-size: 1.5em;
 }
 
 .content {
     margin: 5px 0;
+    font-family: font-body;
+    font-size: 1.3em;
 }
