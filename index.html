@@ -36,14 +36,53 @@
                         <h1>Iris,</h1>
                         <div id="secondText">
                             <p class="header">Just always remember.</p>
-                            <p class="content">I know how strong you are and I've witnessed how you sacrificed your own happiness for your family and dreams.</p>
-                            <p class="content">I see you on your weak days that almost makes you lose hope, but still, you choose to be strong.</p>
-                            <p class="content">I want you to know that I do believe in you, and I will always believe in you, that one day you will achieve all your goals.</p>
-                            <p class="content">So, rest assured that I will always be here for you, watching from a distance, cheering for you.</p>
+                            <p class="content">I know how strong you are and I've witnessed how you sacrificed your own
+                                happiness for your family and dreams.</p>
+                            <p class="content">I see you on your weak days that almost makes you lose hope, but still,
+                                you choose to be strong.</p>
+                            <p class="content">I want you to know that I do believe in you, and I will always believe in
+                                you, that one day you will achieve all your goals.</p>
+                            <p class="content">So, rest assured that I will always be here for you, watching from a
+                                distance, cheering for you.</p>
                         </div>
 
                         <div class="seeMore">
-                            <a onclick="hideSecond()" class="seeButton">Back...</a>
+                            <a onclick="hideSecond()" class="seeButton">More...</a>
+                        </div>
+                    </div>
+
+                    <div id="thirdContainer">
+                        <h1>Enjoy!</h1>
+                        <div id="secondText">
+                            <p class="header">So anyway, no more dramas.</p>
+                            <p class="content">Ingat palagi and just keep on reading.</p>
+                            <p class="content">Este moving pala LOL.</p>
+                        </div>
+
+                        <div class="seeMore">
+                            <button class="confetti-button" onclick="confetti(); hideThird();">Yaay...!</button>
+                        </div>
+                    </div>
+
+                    <div id="thirdContainer">
+                        <h1>Enjoy!</h1>
+                        <div id="secondText">
+                            <p class="header">So anyway, no more dramas.</p>
+                            <p class="content">Ingat palagi and just keep on reading.</p>
+                            <p class="content">Este moving pala LOL.</p>
+                        </div>
+
+                        <div class="seeMore">
+                            <button class="confetti-button" onclick="confetti(); hideThird();">Yaay...!</button>
+                        </div>
+                    </div>
+
+                    <div id="fourthContainer">
+                        <div class="hearty">
+                            <div class="heart">
+                                <div class="heartbeat">❤️</div>
+                                <div class="heartecho">❤️</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -51,26 +90,47 @@
     </section>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <script>
     function hideFirst() {
         var aCont = document.getElementById("firstContainer");
         var bCont = document.getElementById("secondContainer");
+        var cCont = document.getElementById("thirdContainer");
         if (aCont.style.display === "none") {
             aCont.style.display = "block";
         } else {
             aCont.style.display = "none";
             bCont.style.display = "block";
+            cCont.style.display = "none";
         }
     }
 
     function hideSecond() {
         var aCont = document.getElementById("firstContainer");
         var bCont = document.getElementById("secondContainer");
+        var cCont = document.getElementById("thirdContainer");
         if (bCont.style.display === "none") {
-            bCont.style.display = "block";
+            cCont.style.display = "block";
         } else {
             bCont.style.display = "none";
-            aCont.style.display = "block";
+            aCont.style.display = "none";
+            cCont.style.display = "block";
+        }
+    }
+
+    function hideThird() {
+        var aCont = document.getElementById("firstContainer");
+        var bCont = document.getElementById("secondContainer");
+        var cCont = document.getElementById("thirdContainer");
+        var dCont = document.getElementById("fourthContainer");
+        if (cCont.style.display === "none") {
+            dCont.style.display = "flex";
+        } else {
+            bCont.style.display = "none";
+            aCont.style.display = "none";
+            cCont.style.display = "none";
+            dCont.style.display = "flex";
         }
     }
 </script>
